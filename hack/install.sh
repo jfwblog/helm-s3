@@ -39,6 +39,7 @@ if [ -z "${binary_url}" ]; then
 fi
 checksum_url="https://github.com/hypnoglow/helm-s3/releases/download/v${version}/helm-s3_${version}_checksums.txt"
 
+whoami 
 mkdir -p "bin"
 mkdir -p "releases/v${version}"
 binary_filename="releases/v${version}.tar.gz"
